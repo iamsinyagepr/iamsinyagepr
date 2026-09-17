@@ -1,0 +1,648 @@
+<!-- portfolio-replacement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reggie Sinyage | Software Developer in Johannesburg</title>
+    <meta name="description" content="Portfolio of Reggie Sinyage, a Johannesburg-based software developer and final-year BSc Computing student building web, mobile, POS, delivery, and queueing products.">
+    <meta name="keywords" content="Reggie Sinyage, software developer, Johannesburg developer, TypeScript developer, React developer, React Native, Flutter, Golang, portfolio">
+    <meta name="author" content="Sinyage Phathutshedzo Reggie">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sinyagepr.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reggie Sinyage | Software Developer">
+    <meta property="og:description" content="Explore the work and experience of Reggie Sinyage, a software developer building useful web and mobile products.">
+    <meta property="og:url" content="https://sinyagepr.me/">
+    <meta property="og:image" content="https://sinyagepr.me/assets/me-DMO_AyQZ.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reggie Sinyage | Software Developer">
+    <meta name="twitter:description" content="Portfolio of Reggie Sinyage, a Johannesburg-based software developer.">
+    <meta name="twitter:image" content="https://sinyagepr.me/assets/me-DMO_AyQZ.jpeg">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sinyage Phathutshedzo Reggie",
+        "jobTitle": "Software Developer",
+        "description": "Johannesburg-based software developer and final-year BSc Computing student.",
+        "url": "https://sinyagepr.me/",
+        "email": "mailto:reggie.sinyage@gmail.com",
+        "telephone": "+27685499070",
+        "address": {"@type": "PostalAddress", "addressLocality": "Johannesburg", "addressCountry": "ZA"},
+        "sameAs": ["https://github.com/iamsinyagepr", "https://www.linkedin.com/in/reggie-phathutshedzo-sinyage-0003b01bb/"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+
+    <style >
+        .container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw; 
+            height: 100dvh;
+            overflow: hidden;
+            z-index: -1;
+            /* cursor: none;  */
+        }
+
+        .container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 110%;
+            object-fit: cover;
+        }
+
+
+        .image-reveal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            /* Use your ink blob image here */
+            -webkit-mask-image: url('ink-blob.png');
+            mask-image: url('ink-blob.png');
+ 
+            
+            /* Standard mask settings */
+            -webkit-mask-size: 300px; /* Adjust size of the blob */
+            mask-size: 300px;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+
+            /* Position the mask using the JS variables */
+            /* We subtract half the mask-size (150px) to center it on the cursor */
+            -webkit-mask-position: calc(var(--x) - 150px) calc(var(--y) - 150px);
+            mask-position: calc(var(--x) - 150px) calc(var(--y) - 150px);
+
+            
+            
+        }
+
+        .paint-reveal {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            /* Use your ink blob image here */
+            -webkit-mask-image: url('paint-blob.png');
+            mask-image: url('paint-blob.png');
+
+            
+            /* Standard mask settings */
+            -webkit-mask-size: 70vw; /* Adjust size of the blob */
+            mask-size: 70vw;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+
+            /* Position the mask using the JS variables */
+            /* We subtract half the mask-size (150px) to center it on the cursor */
+            -webkit-mask-position: 20vw 42vh;
+            mask-position: 20vw 42vh;
+            
+        }
+
+        #im4 {
+            left: 20px;
+            top: 20px;
+            filter: blur(10px) grayscale();
+            z-index: 0;
+        }
+
+        .symbols {
+            animation: jump 10s linear infinite;
+            opacity: 0.4;
+        }
+
+        .symbols_2 {
+            top: 100vh !important;
+            animation: jump 10s linear infinite;
+            opacity: 0.4;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {  transform: translateY(-100vh) }
+
+        }
+    </style>
+
+    <style>
+
+        :root {
+            --text: #181619;
+            --primary: #73697D;
+
+            --background: #fdfdfd;
+            --tertiary: #db1761;
+
+        }
+
+        html {
+            background-color: var(--background); 
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            user-select: none;
+
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        ul, a {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        header {
+            position: fixed;
+            bottom: 5vh;
+            left: 0;
+            width: 100vw;
+
+            #developer-name {
+                text-align: center;
+                color: var(--background);
+                font-size: 8rem;
+                text-shadow: 0 0 10px var(--tertiary), 0 0 20px var(--tertiary);
+                
+                font-family: "Changa One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            
+            }
+
+            p {
+                color: var(--background);
+                font-size: 1.5rem;
+                text-align: center;
+                text-shadow: 0 0 10px var(--tertiary);
+            }
+
+            
+        }
+
+        
+        main {
+            z-index: 99999;
+
+            #nav-wrapper {
+                height: 100dvh;
+
+                #navigation {
+                    position: fixed;
+                    right: 0;
+                    width: 90vw;
+                    border-radius: 1rem;
+                    margin: 1rem auto;
+                    padding: 1.5rem 2rem;
+    
+                    ul {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        gap: 0.5rem;
+
+                        #point-1, #point-2, #point-3 {
+                            position: absolute;
+                            top: 0;
+                            border-radius: 100px;
+                            z-index: -1;
+                        }
+
+                        #point-1 {
+                            right: 5px;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        #point-2 {
+                            right: -17px;
+                            width: 20px;
+                            height: 20px;
+                            margin: 5px 0px;
+                        }
+                        #point-3 {
+                            right: -30px;
+                            width: 10px;
+                            height: 10px;
+                            margin: 10px 0px;
+                        }
+
+                        a {
+                            font-size: 1.5rem;
+                            padding: 0 1rem;
+                            transition: all ease-in-out 100ms;
+                            cursor: pointer;
+                            color: var(--text);
+    
+                        }
+                    }
+    
+                }
+            }
+
+            #hook-para {
+                height: 100dvh;
+            }
+        }
+
+        .page {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .info-container {
+            position: fixed;
+            top: 100vh;
+            right: 0;
+            width: 600px;
+            height: 100dvh;
+            pointer-events: none;
+            opacity: 0;
+            
+            h1 {
+                font-size: 6rem;
+                font-family: "Changa One", sans-serif;
+            }
+        }
+
+        #page-1, #page-2, #page-3, #page-4, #page-5 {
+            section {
+                padding: 0 2rem;
+            }
+        }
+
+        #page-1, #page-2, #page-4, #page-5 {
+            color: white;
+        }
+
+        
+    </style>
+    <style>
+        :root { --ink:#17151a; --paper:#f4f0e8; --hot:#d01864; --violet:#82628e; --yellow:#f2c806; --display:"Changa One",sans-serif; --label:"Bebas Neue",sans-serif; --body:"DM Sans",sans-serif; }
+        body { background:var(--paper); color:var(--ink); font-family:var(--body); overflow-x:hidden; }
+        .container, body > header, body > main { display:none; }
+        .portfolio-nav { position:fixed; z-index:20; top:0; left:0; right:0; display:flex; justify-content:space-between; align-items:center; padding:1.3rem 4vw; mix-blend-mode:multiply; }
+        .portfolio-nav a { color:var(--ink); text-decoration:none; }
+        .portfolio-nav.nav-light { mix-blend-mode:normal; }
+        .portfolio-nav.nav-light a { color:var(--paper); }
+        .portfolio-nav.nav-light .menu-button { border-color:var(--paper); color:var(--paper); }
+        .wordmark { font:1.35rem var(--label); letter-spacing:.04em; }
+        .nav-links { display:flex; gap:clamp(1rem,3vw,3.25rem); font:1.05rem var(--label); letter-spacing:.04em; }
+        .nav-links a { position:relative; }
+        .nav-links a:after { content:""; position:absolute; left:0; bottom:-.35rem; width:100%; height:2px; background:var(--hot); transform:scaleX(0); transition:transform .3s ease; }
+        .nav-links a:hover:after { transform:scaleX(1); }
+        .menu-button { display:none; border:1px solid var(--ink); background:transparent; padding:.5rem .7rem; font:1rem var(--label); }
+        .portfolio-hero { min-height:100svh; position:relative; display:grid; align-items:center; overflow:hidden; padding:8rem 7vw 5rem; box-sizing:border-box; background:var(--paper); }
+        .portfolio-hero:before { content:""; position:absolute; width:min(62vw,760px); aspect-ratio:1; right:-11vw; top:8vh; border-radius:50%; background:var(--yellow); mix-blend-mode:multiply; animation:portfolio-drift 11s ease-in-out infinite alternate; }
+        .hero-art { position:absolute; z-index:3; width:min(76vw,950px); right:-12vw; bottom:1rem; pointer-events:none; filter:drop-shadow(0 22px 12px rgba(23,21,26,.22)); transform:translate3d(calc(var(--pointer-x,0) * -1px),calc(var(--pointer-y,0) * -1px),0) rotate(4deg); transition:transform .7s cubic-bezier(.2,.8,.2,1); }
+        .hero-shadow { position:absolute; z-index:0; width:min(76vw,950px); right:-12vw; bottom:1rem; opacity:.28; filter:blur(13px) grayscale(1); transform:translate(1rem,1.1rem) rotate(4deg); }
+        .hero-copy { position:relative; z-index:2; max-width:53rem; }
+        .eyebrow { margin:0 0 1rem; color:var(--hot); font:1.15rem var(--label); letter-spacing:.15em; }
+        .portfolio-hero h1 { max-width:10ch; margin:0 0 1.4rem; color:var(--ink); font:clamp(4.5rem,12vw,11rem)/.82 var(--display); letter-spacing:-.04em; }
+        .hero-copy > p:not(.eyebrow) { max-width:27rem; margin-bottom:2rem; font-size:clamp(1rem,1.6vw,1.25rem); line-height:1.55; }
+        .scroll-cue { display:inline-flex; align-items:center; gap:.75rem; color:var(--ink); font:1rem var(--label); letter-spacing:.08em; text-decoration:none; }
+        .scroll-cue:before { content:""; display:block; width:3rem; height:1px; background:var(--ink); }
+        .hero-actions { display:flex; align-items:center; flex-wrap:wrap; gap:1.25rem; }
+        .resume-hero-link { display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1rem; border:1px solid var(--ink); background:var(--yellow); color:var(--ink); font:1rem var(--label); letter-spacing:.05em; text-decoration:none; transition:transform .3s ease,background .3s ease; }
+        .resume-hero-link:hover { background:var(--hot); color:var(--paper); transform:translateY(-.2rem); }
+        .sticker { position:absolute; z-index:4; right:7vw; bottom:7%; width:9rem; height:9rem; overflow:visible; color:var(--paper); transform:rotate(13deg); animation:portfolio-spin 16s linear infinite; }
+        .sticker path { fill:none; }.sticker text { fill:var(--paper); font:700 21px var(--label); letter-spacing:2px; }
+        .portfolio-section { position:relative; padding:clamp(6rem,12vw,12rem) 7vw; overflow:hidden; }
+        .portfolio-grid { position:relative; z-index:1; display:grid; grid-template-columns:minmax(10rem,.7fr) 2fr; gap:clamp(2rem,8vw,10rem); max-width:1180px; margin:auto; }
+        .section-label { margin:0; font:1.1rem var(--label); letter-spacing:.12em; }.section-label span { display:block; margin-bottom:.75rem; color:var(--hot); font-size:.85rem; }
+        .portfolio-section h2 { max-width:12ch; margin:0 0 1.8rem; font:clamp(3.25rem,7vw,7rem)/.85 var(--display); letter-spacing:-.035em; }.section-intro { max-width:36rem; font-size:clamp(1.1rem,2vw,1.45rem); line-height:1.45; }
+        .pink { background:var(--hot); color:var(--paper); }.violet { background:var(--violet); color:var(--paper); }.yellow { background:var(--yellow); }.pink .section-label span,.violet .section-label span { color:var(--yellow); }
+        .skill-list { display:grid; grid-template-columns:repeat(2,1fr); margin:2rem 0 0; padding:0; border-top:1px solid currentColor; list-style:none; }.skill-list li { padding:1.2rem 0; border-bottom:1px solid currentColor; font:clamp(1.6rem,3vw,2.5rem) var(--label); }.skill-list li:before { content:"↗"; display:inline-block; margin-right:.75rem; font-family:var(--body); transition:transform .3s ease; }.skill-list li:hover:before { transform:translate(4px,-4px); }
+        .process-list,.work-list { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }.process-card { padding:1.5rem; border:1px solid currentColor; min-height:12rem; transition:.3s ease; }.process-card:hover { background:var(--paper); color:var(--ink); transform:translateY(-.5rem); }.process-card strong { display:block; margin-bottom:2.5rem; font:1.4rem var(--label); }.process-card p { margin:0; line-height:1.5; }
+        .work-card { min-height:19rem; display:flex; flex-direction:column; justify-content:space-between; padding:0; overflow:hidden; border:1px solid var(--ink); transition:transform .4s ease; }.work-card:hover { transform:rotate(-1.5deg) scale(1.02); }.work-card:nth-child(2) { background:var(--hot); color:var(--paper); }.work-card:nth-child(3) { background:var(--violet); color:var(--paper); }.work-card:nth-child(4) { background:var(--ink); color:var(--paper); }.work-number { position:relative; z-index:1; display:block; padding:1.2rem 1.5rem 0; font:1rem var(--label); }.work-preview { display:block; width:100%; aspect-ratio:16/9; margin-top:.5rem; object-fit:cover; filter:saturate(.85) contrast(1.05); transition:transform .5s ease,filter .5s ease; }.work-card:hover .work-preview { transform:scale(1.06); filter:saturate(1.1) contrast(1.05); }.work-copy { padding:1rem 1.5rem 1.5rem; }.work-card h3 { max-width:8ch; margin:0 0 .8rem; font:clamp(2.4rem,4vw,4rem)/.88 var(--display); }.work-card p { max-width:24rem; margin:0; line-height:1.4; }
+        .contact { min-height:75svh; display:grid; align-items:center; background:var(--ink); color:var(--paper); }.contact-link { display:inline-flex; align-items:center; gap:.55rem; margin-top:2rem; border-bottom:2px solid var(--yellow); color:var(--paper); font:clamp(1.5rem,3vw,2.6rem) var(--label); }.contact-link:hover { color:var(--yellow); }.resume-link { display:block; width:max-content; margin-top:1rem; color:var(--yellow); font:1.1rem var(--label); letter-spacing:.04em; }.contact h2 em { color:var(--yellow); font-style:normal; }.contact-meta { align-self:end; display:flex; align-items:center; flex-wrap:wrap; gap:.75rem 1.25rem; line-height:1.7; }.contact-meta br { display:none; }.contact-meta a { display:inline-flex; align-items:center; gap:.5rem; color:inherit; }.contact-meta a:not([href^="tel:"]) { font-size:0; }.contact-meta a:not([href^="tel:"]) .contact-icon { width:1.35rem; height:1.35rem; }.contact-icon { width:1.05em; height:1.05em; flex:none; fill:currentColor; }.portfolio-footer { display:flex; justify-content:space-between; padding:1.2rem 7vw; background:var(--ink); color:var(--paper); border-top:1px solid rgba(244,240,232,.25); font:.9rem var(--label); letter-spacing:.08em; }
+        .portfolio-reveal { opacity:0; transform:translateY(2rem); transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1); }.portfolio-reveal.visible { opacity:1; transform:none; }
+        @keyframes portfolio-drift { to { transform:translate(-3rem,2rem) scale(1.08); } }@keyframes portfolio-spin { to { transform:rotate(373deg); } }
+        @media(max-width:700px){.portfolio-nav{padding:1rem 1.25rem}.menu-button{position:relative;z-index:2;display:block}.nav-links{position:fixed;inset:0;z-index:1;display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem;padding:6rem 1.25rem 3rem;background:var(--paper);border:0;font-size:clamp(2.4rem,10vw,4rem);letter-spacing:.03em}.nav-links.open{display:flex}.nav-links.open a,.portfolio-nav:has(.nav-links.open) .wordmark,.portfolio-nav:has(.nav-links.open) .menu-button{color:var(--ink)!important}.portfolio-nav:has(.nav-links.open) .menu-button{border-color:var(--ink)}.portfolio-hero{min-height:92svh;padding:8rem 1.25rem 4rem}.portfolio-hero:before{width:120vw;right:-45vw;top:25vh}.hero-art,.hero-shadow{display:none}.portfolio-hero h1{font-size:clamp(4rem,19vw,7rem)}.hero-copy>p:not(.eyebrow){max-width:18rem}.sticker{right:3%;bottom:5%;width:9rem;height:9rem}.sticker text{font-size:18px}.portfolio-section{padding:5rem 1.25rem}.portfolio-grid{grid-template-columns:1fr;gap:2.5rem}.portfolio-section h2{font-size:clamp(3.5rem,16vw,6rem)}.skill-list,.process-list,.work-list{grid-template-columns:1fr}.process-card{min-height:10rem}.contact{min-height:80svh}.portfolio-footer{padding:1.2rem 1.25rem}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.portfolio-reveal{opacity:1;transform:none}}
+    </style>
+</head>
+<body>
+    <nav class="portfolio-nav" aria-label="Primary navigation"><a class="wordmark" href="#portfolio-top">SINYAGE PR</a><button class="menu-button" type="button" aria-expanded="false">Menu</button><div class="nav-links"><a href="#expertise">Expertise</a><a href="#process">Process</a><a href="./projects.html">Projects</a><a href="#contact">Contact</a></div></nav>
+    <div id="portfolio-top">
+        <section class="portfolio-hero"><img class="hero-shadow" src="./person_no_background.png" alt=""><img class="hero-art" src="./person_no_background.png" alt=""><div class="hero-copy portfolio-reveal"><p class="eyebrow">Reggie Sinyage / Developer</p><h1>Building useful things.</h1><p>Final-year BSc Computing student with 5+ years of coding experience, based in Johannesburg, South Africa.</p><div class="hero-actions"><a class="scroll-cue" href="#expertise">Explore the work</a><a class="resume-hero-link" href="./resume.html">View resume ↗</a></div></div><svg class="sticker" viewBox="0 0 160 160" role="img" aria-label="5 plus years coding"><defs><path id="sticker-ring" d="M 80,80 m -42,0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0"></path></defs><text><textPath href="#sticker-ring">5+ YEARS CODING • 5+ YEARS CODING •</textPath></text></svg></section>
+        <section class="portfolio-section pink" id="expertise"><div class="portfolio-grid"><p class="section-label"><span>01</span>What I build</p><div class="portfolio-reveal"><h2>From idea to shipped product.</h2><p class="section-intro">I build practical web and mobile products across storefronts, queues, delivery, inventory and developer tooling.</p><ul class="skill-list"><li>TypeScript / JavaScript</li><li>React / React Native</li><li>Flutter / Dart</li><li>Golang / Java</li></ul></div></div></section>
+        <section class="portfolio-section violet" id="process"><div class="portfolio-grid"><p class="section-label"><span>02</span>How I work</p><div class="portfolio-reveal"><h2>Make room for the good stuff.</h2><div class="process-list"><article class="process-card"><strong>01 / Listen</strong><p>Find the real question underneath the brief.</p></article><article class="process-card"><strong>02 / Shape</strong><p>Turn loose thoughts into a clear visual direction.</p></article><article class="process-card"><strong>03 / Build</strong><p>Make the interaction tangible, fast and considered.</p></article><article class="process-card"><strong>04 / Refine</strong><p>Test the edges until the experience feels inevitable.</p></article></div></div></div></section>
+        <section class="portfolio-section yellow" id="work"><div class="portfolio-grid"><p class="section-label"><span>03</span>Selected work</p><div class="portfolio-reveal"><h2>Products that solve problems.</h2><div class="work-list"><article class="work-card"><span class="work-number">01 / food ordering</span><img class="work-preview" src="./project-previews/rasking.webp" alt="Rasking Fast Food online ordering preview"><div class="work-copy"><h3>Rasking Fast Food</h3><p>A restaurant storefront for online ordering, powered by a POS system that manages incoming orders.</p></div></article><article class="work-card"><span class="work-number">02 / queueing</span><img class="work-preview" src="./project-previews/q4me.webp" alt="Q4ME queueing platform preview"><div class="work-copy"><h3>Q4ME</h3><p>A queuing platform that lets users request people to queue for them.</p></div></article><article class="work-card"><span class="work-number">03 / delivery</span><img class="work-preview" src="./project-previews/tiptap-delivery.webp" alt="Tiptap Delivery food ordering and tracking preview"><div class="work-copy"><h3>Tiptap Delivery</h3><p>Food ordering, order tracking, ride requests, location tracking and directions.</p></div></article><article class="work-card"><span class="work-number">04 / operations</span><img class="work-preview" src="./project-previews/pos-inventory.webp" alt="POS and inventory management preview"><div class="work-copy"><h3>POS &amp; Inventory</h3><p>Inventory, stock, delivery and cashier management with receipt printing.</p></div></article></div></div></div></section>
+        <section class="portfolio-section contact" id="contact"><div class="portfolio-grid"><p class="section-label"><span>04</span>Say hello</p><div class="portfolio-reveal"><h2>Let’s build something <em>useful.</em></h2><p class="section-intro">Have a project, product idea or technical challenge? I’m open to thoughtful collaborations.</p><a class="contact-link" href="mailto:reggie.sinyage@gmail.com"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.5h19v13h-19v-13Zm2 2v9h15v-9l-7.5 5-7.5-5Zm1.8 0L12 10.2l5.7-2.7H6.3Z"></path></svg>reggie.sinyage@gmail.com</a><a class="resume-link" href="./resume.html">View / download resume ↗</a></div><p class="contact-meta">Johannesburg, South Africa<br><a aria-label="GitHub" title="GitHub" href="https://github.com/sinyagepr"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.32-3.79-1.32-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 .1.77 1.97 2.94 1.4.1-.7.39-1.18.7-1.45-2.5-.28-5.13-1.25-5.13-5.55 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.31-2.63 5.27-5.14 5.55.4.35.75 1.05.75 2.12v3.14c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"></path></svg></a><br><a aria-label="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/reggie-phathutshedzo-sinyage-0003b01bb/"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.1 3.2A2.1 2.1 0 1 1 4.1 7.4a2.1 2.1 0 0 1 0-4.2ZM2.3 8.9h3.6v11.7H2.3V8.9Zm5.8 0h3.4v1.6h.1c.47-.9 1.62-1.9 3.34-1.9 3.57 0 4.23 2.35 4.23 5.4v6.6h-3.6v-5.86c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1v5.96H8.1V8.9Z"></path></svg></a><br><a aria-label="WhatsApp" title="WhatsApp" href="https://wa.me/27685499070"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2a9.7 9.7 0 0 0-8.35 14.63L2.3 21.8l5.13-1.3A9.7 9.7 0 1 0 12 2.2Zm0 17.6a7.9 7.9 0 0 1-4.02-1.1l-.29-.17-3.05.77.82-2.96-.19-.31A7.9 7.9 0 1 1 12 19.8Zm4.34-5.9c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.18 1.11.15 1.53.09.47-.07 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"></path></svg></a><br><a href="tel:+27685499070"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.5 9 2l2 4.8-1.8 1.5a13.7 13.7 0 0 0 6.5 6.5l1.5-1.8 4.8 2.1-.5 2.4a2.4 2.4 0 0 1-2.6 1.9C10.8 18.5 5.5 13.2 4.6 5.1A2.4 2.4 0 0 1 6.6 2.5Z"></path></svg>+27 68 549 9070</a></p></div></section>
+        <footer class="portfolio-footer"><span>© 2026 SINYAGE PR</span><span>Built with intention</span></footer>
+    </div>
+    <script>
+        const portfolioMenu=document.querySelector('.menu-button'),portfolioLinks=document.querySelector('.nav-links');portfolioMenu.addEventListener('click',()=>{const open=portfolioLinks.classList.toggle('open');portfolioMenu.setAttribute('aria-expanded',open)});portfolioLinks.addEventListener('click',e=>{if(e.target.matches('a')){portfolioLinks.classList.remove('open');portfolioMenu.setAttribute('aria-expanded','false')}});
+        const portfolioObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');portfolioObserver.unobserve(entry.target)}}),{threshold:.15});document.querySelectorAll('.portfolio-reveal').forEach(item=>portfolioObserver.observe(item));
+        if(window.matchMedia('(hover: hover)').matches)window.addEventListener('pointermove',e=>{document.documentElement.style.setProperty('--pointer-x',((e.clientX/window.innerWidth-.5)*18).toFixed(2));document.documentElement.style.setProperty('--pointer-y',((e.clientY/window.innerHeight-.5)*18).toFixed(2))},{passive:true});
+        const portfolioNav=document.querySelector('.portfolio-nav'),portfolioSections=document.querySelectorAll('.portfolio-section');
+        const updateNavTheme=()=>{const navBottom=portfolioNav.getBoundingClientRect().bottom;let activeSection='';portfolioSections.forEach(section=>{const bounds=section.getBoundingClientRect();if(bounds.top<=navBottom+24&&bounds.bottom>navBottom)activeSection=section.id});portfolioNav.classList.toggle('nav-light',['expertise','process','contact'].includes(activeSection));};
+        window.addEventListener('scroll',updateNavTheme,{passive:true});window.addEventListener('resize',updateNavTheme);updateNavTheme();document.querySelectorAll('a[href="https://github.com/sinyagepr"]').forEach(link=>{link.href='https://github.com/iamsinyagepr';});
+        const nativeAddEventListener=window.addEventListener.bind(window);window.addEventListener=(type,listener,options)=>type==='wheel'?undefined:nativeAddEventListener(type,listener,options);
+    </script>
+</body>
+    <div class="container" id="mask-container">
+        <img src="./symbols_and_text.png" id="im0" class="symbols" alt="Under">
+        <img src="./symbols_and_text.png" id="im0" class="symbols_2" alt="Under">
+
+        <div id="page-1" class="info-container">
+            <section>
+                <h1>Experties</h1>
+                <p>
+                    This and other thing that include some other things
+                </p>
+            </section>
+        </div>
+            
+        <div id="page-2" class="info-container">
+            <section>
+                <h1>My Process</h1>
+            </section>
+        </div>
+
+        <div id="page-3" class="info-container">
+            <section>
+                <h1>Professional Work</h1>
+            </section>
+        </div>
+            
+        <div id="page-4" class="info-container">
+            <section>
+                <h1>Side Projects</h1>
+            </section>
+        </div>
+
+        <div id="page-5" class="info-container">
+            <section>
+                <h1>Get In Touch</h1>
+            </section>
+        </div>
+
+
+        <img src="./person_no_background.png" id="im4"  alt="Under">
+        <img src="./person_no_background.png" id="im1" class="image-under" alt="Under">
+
+        <img src="./simpson_mask_2.png" id="im2" class="paint-reveal" alt="Top"> 
+        <img src="./simpson_mask_2_no_background.png" id="im3" class="image-reveal" alt="Top"> 
+    </div>
+
+    
+    <header id="header-info">
+        <h1 id="developer-name">SINYAGE PR</h1>
+        <p>Final year computing student</p>
+    </header>
+
+    
+    <main >
+        <section id="nav-wrapper">
+            <div id="navigation">
+                <ul>
+                    <div id="point-1" ></div>
+                    <div id="point-2" ></div>
+                    <div id="point-3" ></div>
+                    <li><a id="nav-1" onclick="scrollCurrentWindow(0)">x</a></li>
+                    <li><a id="nav-2" onclick="scrollCurrentWindow(1)">Experties</a></li>
+                    <li><a id="nav-3" onclick="scrollCurrentWindow(2)">My Process</a></li>
+                    <li><a id="nav-4" onclick="scrollCurrentWindow(3)">Professional Work</a></li>
+                    <li><a id="nav-5" onclick="scrollCurrentWindow(4)">Side Projects</a></li>
+                    <li><a id="nav-6" onclick="scrollCurrentWindow(5)">Get In Touch</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+    </main>
+
+    <script>
+        const container = document.getElementById('mask-container');
+        const revealImage = document.querySelector('.image-reveal');
+        const person = document.querySelector("#im1")
+        const personShadow = document.querySelector("#im4")
+
+        let offset = false
+
+        document.addEventListener('mousemove', (e) => {
+
+
+            const rect = container.getBoundingClientRect();
+            
+            const x = (e.clientX - rect.left) + (offset ? 400 : 0);
+            const y = e.clientY - rect.top;
+
+            revealImage.style.setProperty('transition', `all ease 200ms`);
+            
+            revealImage.style.setProperty('--x', `${x}px`);
+            revealImage.style.setProperty('--y', `${y}px`);
+
+            let factor = 20
+            // x rotate calculations
+            , center = (window.innerWidth / 2)
+            , distance = x > center ? (((x-center)/center) * factor) : ((x/center) * factor) - factor
+            , deg = -(distance)
+
+            // y rotate calculations
+            , centerY = (window.innerHeight / 2)
+            , distanceY = y > centerY ? (((y-centerY)/centerY) * factor) : ((y/centerY) * factor) - factor
+            , degY = -(distanceY);
+
+
+            revealImage.style.setProperty('transform', `rotateX(${degY}deg) rotateY(${deg}deg)`)
+            person.style.setProperty('transform', `rotateX(${degY}deg) rotateY(${deg}deg)`)
+            personShadow.style.setProperty('transform', `rotateX(${degY}deg) rotateY(${deg}deg)`)
+
+        });
+    </script>
+
+    <script>
+        class WhileScroll {
+            targetPos = 0;
+            currentPos = 0;
+            isScrolling = false;
+            bindings = [];
+
+            constructor() {
+                this.targetPos = window.scrollY;
+                this.currentPos = window.scrollY;
+            }
+
+            run() {
+                window.addEventListener('wheel', (e) => {
+                    e.preventDefault();
+                }, { passive: false });
+
+                window.addEventListener("scroll", e => {
+                    if (this.bindings.length) {
+                        for (const callback of this.bindings) {
+                            callback(window.scrollX, document.documentElement.scrollTop, true);
+                        }
+                    }
+
+                }, { passive: true })
+            }
+
+            updateScroll() {
+                const diff = (this.targetPos - this.currentPos) * 0.1; 
+                this.currentPos += diff;
+
+                window.scrollTo(0, this.currentPos);
+
+                if (this.bindings.length) {
+                    for (const callback of this.bindings) {
+                        callback(window.scrollX, Math.floor(this.currentPos));
+                    }
+                }
+
+                if (Math.abs(diff) > 0.1) {
+                    requestAnimationFrame(() => this.updateScroll());
+                } else {
+                    this.isScrolling = false;
+                    this.currentPos = this.targetPos;
+                }
+            }
+
+            addListener(callback) {
+                this.bindings.push(callback);
+                if (this.bindings.length) {
+                    for (const callback of this.bindings) {
+                        callback(window.scrollX, this.currentPos);
+                    }
+                }
+            }
+
+        }
+        
+        function animate(id, props, duration = "500ms", delay) {
+            let doc = document.getElementById(id)
+            if(!doc) return;
+            
+            function handleStyles(styles) {
+                for (key in styles) {
+                    if(doc.style[key] !== styles[key]) doc.style[key] = styles[key]
+                }
+            }
+
+
+            doc.style.transition = "none"
+            if ("init" in props) handleStyles(props.init)
+            doc.style.transition = "all ease " + duration
+            if("animate" in props) setTimeout(() => handleStyles(props.animate), delay ?? 100)
+        }
+
+        const S = new WhileScroll();
+        const COLORS = ["#D01864", "9D1B5D", "82628E", "F2C806", "502270", "2D2927"]
+        const WIDTH = [30, 100, 120, 180, 130, 120]
+        const wh = window.innerHeight, ww = window.innerWidth;
+        
+        // content animation delay
+        let delayEntry = true
+
+        S.addListener((x, y, overwrite) => {
+
+
+            function isActive(page) {
+                return y >= wh*page && y < (page + 1)*wh
+            }
+
+            //active page
+            let at0 = isActive(0), at1 = isActive(1)
+            ,at2 = isActive(2), at3 = isActive(3)
+            ,at4 = isActive(4), at5 = isActive(5)
+            // page index
+            ,pageIndex = Math.floor(y/wh);
+
+ 
+            // image layer animation
+            for (const i of [1,2,3,4]) animate("im" + i, {
+                animate: {
+                    "translate": `${!(at0) ? (-400) : 0}px 0px`,
+                }
+            }, undefined, !delayEntry ? 600 : undefined);
+ 
+
+            // navigation data animation
+            animate("navigation", {
+                animate: {
+                    translate: (at0) ? "0px 0px" : "-600px 0px"
+                }
+            })
+            
+            // navigation bullets animation
+            for (const b of [1, 2, 3]) animate("point-" + b, {
+                animate: {
+                    translate: `0px ${37*(pageIndex) + (pageIndex * 2)}px`,
+                    width: b > 1 ? 20 : `${WIDTH[pageIndex]}px`,
+                    "background-color": `#${COLORS[pageIndex]}`,
+                }
+            }, "600ms", 200 + (b*100))
+
+
+            animate("header-info", { 
+                animate: { 
+                    translate: !(at0) ? `-300px 0px` :`0px 0px`, 
+                    scale: (at0) ? 1 : 0.9
+                }
+            })
+
+
+            for (let i = 0; i < COLORS.length; i++) /* content animation*/ animate("page-" + i, {
+                animate: {
+                    translate: (i == pageIndex) ? '0px -100vh' : i < pageIndex ? "0px -200vh" : '0px 0px',
+                    opacity: 1,
+                    "background-color": `#${COLORS[i]}`,
+                }
+            }, undefined, delayEntry ? 700 : undefined),
+            // navigation links color animation
+            animate("nav-" + (i + 1), {
+                animate: { color: (i === pageIndex && i !== 3) ? `white` : 'var(--text)'}
+            }, undefined, !delayEntry ? 650 : undefined)
+
+            delayEntry = at0;
+        
+        })
+
+        S.run();
+    </script>
+
+    <script>
+        function scrollCurrentWindow(value) {
+            document.documentElement.scrollTo({ top: value * window.innerHeight, behavior: "smooth" })
+            offset = !!value
+        }
+
+        function syncScroll() {
+            // offset = window.scrollY > window.innerHeight;
+            scrollCurrentWindow(Math.floor(window.scrollY / window.innerHeight))
+        }
+
+        syncScroll()
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Sinyage Phathutshedzo Reggie, software developer.">
+    <title>Resume | Sinyage Phathutshedzo Reggie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --ink:#17151a; --paper:#f4f0e8; --pink:#d01864; --yellow:#f2c806; --muted:#615d64; }
+        * { box-sizing:border-box; }
+        body { margin:0; background:#d9d4cc; color:var(--ink); font-family:"DM Sans",sans-serif; line-height:1.5; }
+        a { color:inherit; }
+        .toolbar { position:fixed; z-index:5; top:1.5rem; right:1.5rem; display:flex; gap:.75rem; }
+        .toolbar a, .toolbar button { border:1px solid var(--ink); padding:.7rem 1rem; background:var(--paper); color:var(--ink); cursor:pointer; font:1rem "Bebas Neue",sans-serif; letter-spacing:.05em; text-decoration:none; }
+        .toolbar a:hover, .toolbar button:hover { background:var(--yellow); }
+        .resume { max-width:960px; margin:4rem auto; padding:4.5rem 5.5rem; background:var(--paper); box-shadow:0 1rem 3rem rgba(23,21,26,.16); }
+        .resume-header { display:grid; grid-template-columns:1fr 8rem; gap:2rem; align-items:center; padding-bottom:2.25rem; border-bottom:4px solid var(--ink); }
+        .eyebrow { margin:0 0 .5rem; color:var(--pink); font:1.1rem "Bebas Neue",sans-serif; letter-spacing:.16em; }
+        h1, h2, h3 { margin:0; font-family:"Bebas Neue",sans-serif; font-weight:400; letter-spacing:.03em; }
+        h1 { font-size:clamp(3.5rem,7vw,6.5rem); line-height:.85; }
+        .role { margin:.75rem 0 0; color:var(--muted); font-size:1.1rem; }
+        .profile-image { width:8rem; height:8rem; object-fit:cover; object-position:50% 15%; border-radius:50%; background:var(--yellow); }
+        .contact-bar { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; padding:1rem 0 0; color:var(--muted); font-size:.9rem; }
+        .contact-bar a { text-decoration:none; }.contact-bar a:hover { color:var(--pink); }
+        .resume-layout { display:grid; grid-template-columns:1.65fr 1fr; gap:4rem; padding-top:2.5rem; }
+        .section { margin-bottom:2.5rem; }.section-title { margin-bottom:1.25rem; padding-bottom:.45rem; border-bottom:2px solid var(--pink); color:var(--pink); font-size:1.5rem; }
+        .summary { font-size:1.1rem; line-height:1.7; }
+        .job { margin-bottom:2rem; }.job:last-child { margin-bottom:0; }.job-heading { display:flex; justify-content:space-between; gap:1rem; margin-bottom:.25rem; }.job h3 { font-size:1.45rem; line-height:1; }.date { color:var(--muted); font-size:.85rem; text-align:right; }.company { margin:0 0 .6rem; color:var(--pink); font-weight:700; }.job ul { margin:.5rem 0 0; padding-left:1.2rem; color:var(--muted); }.job li { margin:.35rem 0; }
+        .tag-list { display:flex; flex-wrap:wrap; gap:.5rem; margin:0; padding:0; list-style:none; }.tag-list li { padding:.4rem .65rem; background:var(--yellow); font-size:.85rem; }
+        .education h3 { font-size:1.5rem; }.education p { margin:.25rem 0; color:var(--muted); }
+        .side-note { padding:1.25rem; background:var(--yellow); }.side-note h3 { margin-bottom:.5rem; font-size:1.4rem; }.side-note p { margin:0; }
+        @media(max-width:700px) { .toolbar { top:1rem; right:1rem; }.resume { margin:0; padding:5.5rem 1.25rem 2.5rem; box-shadow:none; }.resume-header { grid-template-columns:1fr 5.5rem; gap:1rem; }.profile-image { width:5.5rem; height:5.5rem; }.resume-layout { grid-template-columns:1fr; gap:0; }.job-heading { display:block; }.date { margin-top:.35rem; text-align:left; }.contact-bar { display:grid; gap:.35rem; } }
+        @media print { @page { margin:1.2cm; size:A4; } body { background:#fff; }.toolbar { display:none; }.resume { max-width:none; margin:0; padding:0; box-shadow:none; }.resume-header { break-inside:avoid; }.resume-layout { gap:2.5rem; }.job { break-inside:avoid; }.side-note { background:#f2c806 !important; print-color-adjust:exact; -webkit-print-color-adjust:exact; } a { text-decoration:none; } }
+    </style>
+</head>
+<body>
+    <div class="toolbar" aria-label="Resume actions">
+        <a href="./index.html">Back to portfolio</a>
+        <button type="button" onclick="window.print()">Download PDF</button>
+    </div>
+    <article class="resume">
+        <header class="resume-header">
+            <div>
+                <p class="eyebrow">Software Developer</p>
+                <h1>Sinyage<br>Phathutshedzo Reggie</h1>
+                <p class="role">Final-year BSc Computing student with 5+ years of coding experience.</p>
+                <div class="contact-bar"><span>Johannesburg, South Africa</span><a href="mailto:reggie.sinyage@gmail.com">reggie.sinyage@gmail.com</a><a href="tel:+27685499070">+27 68 549 9070</a><a href="https://github.com/iamsinyagepr">github.com/iamsinyagepr</a></div>
+            </div>
+            <img class="profile-image" src="./person_no_background.png" alt="Portrait of Sinyage Phathutshedzo Reggie">
+        </header>
+        <div class="resume-layout">
+            <div>
+                <section class="section"><h2 class="section-title">Profile</h2><p class="summary">Self-motivated software developer seeking challenging opportunities to contribute my skills, build useful products and keep learning. Experienced across web, mobile, POS, delivery, queueing and telemedicine platforms.</p></section>
+                <section class="section"><h2 class="section-title">Work Experience</h2>
+                    <article class="job"><div class="job-heading"><h3>Freelance Software Developer</h3><span class="date">2024 - Current</span></div><p class="company">Q4ME Services</p><ul><li>Developed an online queuing platform using an agile method.</li><li>Translated UI designs from Figma into a React Native application.</li></ul></article>
+                    <article class="job"><div class="job-heading"><h3>Freelance Software Developer</h3><span class="date">August 2021</span></div><p class="company">Dr ME Makhwanya</p><ul><li>Developed a telemedicine platform for remote consultations with healthcare professionals.</li><li>Implemented appointment scheduling and virtual consultation features.</li><li>Prioritized patient confidentiality and healthcare compliance requirements.</li></ul></article>
+                    <article class="job"><div class="job-heading"><h3>Software Developer</h3><span class="date">April 2022 - November 2023</span></div><p class="company">Tosa Exchange</p><ul><li>Built responsive, user-friendly web applications with a cross-functional team.</li><li>Used React, NextJS and TypeScript to create modular, reusable components.</li><li>Integrated RESTful APIs for data retrieval and storage.</li></ul></article>
+                    <article class="job"><div class="job-heading"><h3>Freelance Software Developer</h3><span class="date">April 2023 - Current</span></div><p class="company">Rasking Enterprise</p><ul><li>Developed a food ordering web application for browsing menus and placing orders.</li><li>Integrated real-time order tracking and status updates.</li><li>Worked with stakeholders to iterate on requirements and feedback.</li></ul></article>
+                    <article class="job"><div class="job-heading"><h3>Freelance Software Developer</h3><span class="date">June 2023 - Current</span></div><p class="company">Tiptap Delivery</p><ul><li>Developed a food delivery mobile application connecting users with nearby restaurants.</li><li>Implemented geolocation for driver tracking and delivery estimates.</li><li>Integrated secure payment and order confirmation features.</li></ul></article>
+                </section>
+            </div>
+            <aside>
+                <section class="section"><h2 class="section-title">Languages</h2><ul class="tag-list"><li>C++</li><li>Dart</li><li>Golang</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>HTML</li><li>CSS</li></ul></section>
+                <section class="section"><h2 class="section-title">Tools</h2><ul class="tag-list"><li>React</li><li>React Native</li><li>Expo</li><li>Flutter</li><li>GitHub</li><li>Git</li><li>NextJS</li><li>Vite</li><li>SASS</li><li>Tailwind</li><li>Styled Components</li></ul></section>
+                <section class="section education"><h2 class="section-title">Education</h2><h3>University of South Africa</h3><p>Final year</p><p>BSc in Computing</p></section>
+                <section class="side-note"><h3>Available for thoughtful work</h3><p>Open to software development opportunities and collaborations that solve real problems.</p></section>
+            </aside>
+        </div>
+    </article>
+</body>
+</html>

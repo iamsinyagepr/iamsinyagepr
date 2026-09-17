@@ -1,0 +1,13 @@
+# Unused legacy collage assets
+background*.png
+empty_background.png
+ink-blob.png
+paint-blob.png
+person.png
+simpson_mask*.png
+symbols_and_text.png
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
