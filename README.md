@@ -5,7 +5,7 @@
 Final-year **BSc Computing student** with **5+ years of coding experience**, based in Johannesburg, South Africa.
 
 [![Email](https://img.shields.io/badge/Email-reggie.sinyage%40gmail.com-d01864?style=flat-square&logo=gmail&logoColor=white)](mailto:reggie.sinyage@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-sinyagepr-17151a?style=flat-square&logo=github&logoColor=white)](https://github.com/sinyagepr)
+[![GitHub](https://img.shields.io/badge/GitHub-iamsinyagepr-17151a?style=flat-square&logo=github&logoColor=white)](https://github.com/iamsinyagepr)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Reggie%20Sinyage-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/reggie-phathutshedzo-sinyage-0003b01bb/)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-+27%2068%20549%209070-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/27685499070)
 
@@ -137,5 +137,5 @@ Final year
 - **Email:** [reggie.sinyage@gmail.com](mailto:reggie.sinyage@gmail.com)
 - **Phone:** [+27 68 549 9070](tel:+27685499070)
 - **WhatsApp:** [wa.me/27685499070](https://wa.me/27685499070)
-- **GitHub:** [github.com/sinyagepr](https://github.com/sinyagepr)
+- **GitHub:** [github.com/iamsinyagepr](https://github.com/iamsinyagepr)
 - **LinkedIn:** [linkedin.com/in/reggie-phathutshedzo-sinyage-0003b01bb](https://www.linkedin.com/in/reggie-phathutshedzo-sinyage-0003b01bb/)
