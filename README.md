@@ -1,5 +1,7 @@
 # Sinyage Phathutshedzo Reggie
 
+![Portrait of Sinyage Phathutshedzo Reggie](./person_no_background.png)
+
 ### Software Developer
 
 Final-year **BSc Computing student** with **5+ years of coding experience**, based in Johannesburg, South Africa.
